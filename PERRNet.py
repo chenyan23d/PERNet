@@ -655,7 +655,7 @@ class IFM(nn.Module):
         return x
 
 
-class SARNet(nn.Module):
+class PERNet(nn.Module):
     def __init__(self, fun_str1='pvt_v2_b3'):
         super().__init__()
         self.backbone, embedding_dims = eval(fun_str1)()
@@ -1066,5 +1066,6 @@ class RSM(nn.Module):
         fused_refine = self.em1(fused_refine)
         output_map = self.output_map(fused_refine)
         edge_map = edge_prediction(output_map)
+
 
         return fused_refine, output_map, edge_map
