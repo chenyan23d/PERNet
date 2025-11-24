@@ -23,11 +23,9 @@ def main(exp_name,net,scale,results_path,pth_path):
     check_mkdir(results_path)
     #
     to_test = OrderedDict([
-        ('CHAMELEON', chameleon_path),
         ('CAMO', camo_path),
         ('COD10K', cod10k_path),
         ('NC4K', nc4k_path)
-        
     ])
     results = OrderedDict()
     img_transform = transforms.Compose([
@@ -99,7 +97,6 @@ def evluation_with_resultspath(results_path,path_excel):
     _, exp_name = os.path.split(results_path)
     #         
     to_test = OrderedDict([
-        ('CHAMELEON', chameleon_path),
         ('CAMO', camo_path),
         ('COD10K', cod10k_path),
         ('NC4K', nc4k_path)
@@ -135,10 +132,10 @@ def evaluation_COD(exp_name,net,scale,results_path,pth_path):
 
 if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-    exp_name = 'SARNet'
-    from SARNet_de31 import SARNet
-    net = SARNet('pvt_v2_b4').cuda()
-    pth_path = os.path.join('./ckpt/SARNet_v1/100.pth')
-    results_path = os.path.join(root,'SARNet/results')
+    exp_name = 'PERNet'
+    from PERNet import PERNet
+    net = PERNet('pvt_v2_b4').cuda()
+    pth_path = os.path.join('./ckpt/PERNet_v1/100.pth')
+    results_path = os.path.join(root,'PERNet/results')
     #evluation_with_resultspath(results_path,'./results_1.xlsx')
     main(exp_name, net, 512, results_path, pth_path)
