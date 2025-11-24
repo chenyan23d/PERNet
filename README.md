@@ -25,4 +25,4 @@
 
     *   After you download all the pre-trained model and testing dataset, just run `infer.py` to generate the final prediction maps.
 
-    *   You can also download prediction maps ('CHAMELEON', 'CAMO', 'COD10K') from .
+    *   You can also download prediction maps ('CAMO', 'COD10K', 'NC4K') from https://pan.baidu.com/s/1CTIqN2b5Jte5zynCTzIh_A?pwd=w7dc.
