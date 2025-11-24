@@ -15,7 +15,7 @@
 
     *   downloading our weights and move it into `./PERNet.pth`，the pretrained model of our model can be downloaded at https://pan.baidu.com/s/1bjoYE5Mn3ZgixubZVQik_g?pwd=m5j2;
 
-    *   downloading pvt_v2_b4 weights and move it into `./pvt_v2_b4.pth.pth`.
+    *   downloading pvt_v2_b4 weights and move it into `./pvt_v2_b4.pth`.
 
 3.  Training Configuration:
 
