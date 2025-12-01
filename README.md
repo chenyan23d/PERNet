@@ -2,7 +2,7 @@
 
 ## 1. Repository
 
-*   This repository provides the official implementation of "***Enhanced Camouflaged Object Detection: A Perception-Enhancement-Refinement Framework***" (Currently submitted to The Visual Computer).
+*   This repository provides the official implementation of "***Enhanced Camouflaged Object Detection: A Perception-Enhancement-Refinement Framework***" .
 *   The code implements the proposed Perception-Enhancement-Refinement framework. If this work contributes to your research, we would appreciate a citation to our manuscript.
   
 ## 2. Environment Configuration
